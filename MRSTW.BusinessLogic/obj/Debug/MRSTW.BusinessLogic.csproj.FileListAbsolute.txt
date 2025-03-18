@@ -1,0 +1,11 @@
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.BusinessLogic\bin\Debug\MRSTW.BusinessLogic.dll
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.BusinessLogic\bin\Debug\MRSTW.BusinessLogic.pdb
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.BusinessLogic\bin\Debug\MRSTW.Domain.dll
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.BusinessLogic\bin\Debug\MRSTW.Helpers.dll
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.BusinessLogic\bin\Debug\MRSTW.Helpers.pdb
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.BusinessLogic\bin\Debug\MRSTW.Domain.pdb
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.BusinessLogic\obj\Debug\MRSTW.BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.BusinessLogic\obj\Debug\MRSTW.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.BusinessLogic\obj\Debug\MRSTW.Bu.638C40FA.Up2Date
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.BusinessLogic\obj\Debug\MRSTW.BusinessLogic.dll
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.BusinessLogic\obj\Debug\MRSTW.BusinessLogic.pdb

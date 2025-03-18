@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <title> Evenimente </title>
+      <link href="">
+    </head>
+
+    <body>
+        <!-- header -->
+         <header>
+            <nav class="navbar navbar-expand-lg navigation-wrap">
+                <div class="container">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                     <i class="navbar-toggler-icon"></i>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Acasa</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#explore">Exploreaza evenimente</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#add">Adauga eveniment</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#support">FAQ/Suport</a>
+                      </li>
+                      <li><button class="main-button">Button</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+         </header>
+
+        <!--top-banner -->
+
+        <section id="home">
+          <div class="container-fluid px-0 top-banner">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5 col-md-6">
+                  <h1>TOP EVENIMENTE</h1>
+                  <h2>Exploreaza cele mai asteptate evenimente</h2>
+                  <div class="mt-4">
+                    <button class="main-button">Exploreaza</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- meniu -->
+
+        <section class="events p-4">
+          <div class="container text-center">
+            <h2 class="pb-4">Evenimente</h2>
+            <div class="row">
+              <div class="col-6 col-sm-2 mb-4 mb-lg-0">
+                <div class="card">
+                  <div class="cat-image">
+                    <a class="link_category_events" href="#">
+                      <img src="" class="img-fluid"> <!-- imagine -->
+                    </a>
+                  </div>
+                  <div class="cat-title">
+                    <a href="#">Concerte</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-sm-2 mb-4 mb-lg-0">
+                <div class="card">
+                  <div class="cat-image">
+                    <a class="link_category_events" href="#">
+                      <img src="" class="img-fluid"> <!-- imagine -->
+                    </a>
+                  </div>
+                  <div class="cat-title">
+                    <a href="#">Evenimente culturale</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-sm-2 mb-4 mb-lg-0">
+                <div class="card">
+                  <div class="cat-image">
+                    <a class="link_category_events" href="#">
+                      <img src="" class="img-fluid"> <!-- imagine -->
+                    </a>
+                  </div>
+                  <div class="cat-title">
+                    <a href="#">Evenimente sportive</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-sm-2 mb-4 mb-lg-0">
+                <div class="card">
+                  <div class="cat-image">
+                    <a class="link_category_events" href="#">
+                      <img src="" class="img-fluid"> <!-- imagine -->
+                    </a>
+                  </div>
+                  <div class="cat-title">
+                    <a href="#">Intruniri/Meeting-uri</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-sm-2 mb-4 mb-lg-0">
+                <div class="card">
+                  <div class="cat-image">
+                    <a class="link_category_events" href="#">
+                      <img src="" class="img-fluid"> <!-- imagine -->
+                    </a>
+                  </div>
+                  <div class="cat-title">
+                    <a href="#">Actiuni de voluntariat</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-sm-2 mb-4 mb-lg-0">
+                <div class="card">
+                  <div class="cat-image">
+                    <a class="link_category_events" href="#">
+                      <img src="" class="img-fluid"> <!-- imagine -->
+                    </a>
+                  </div>
+                  <div class="cat-title">
+                    <a href="#">Altele</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- adauga evenimente-->
+
+        <!-- FAQ -->
+
+        <!-- Footer -->
+
+
+
+    
+    </body>
+
+

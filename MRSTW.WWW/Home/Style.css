@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+     --primary-color: #2c19fa;
+     --secondary-color: #1fcdf9;
+     --white-color: #fff;
+     --black-color: #000;
+     --primary-font: 'Inter', sans-serif;
+     --secondary-font: 'Noto Sans', sans-serif;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+*,
+*:after,
+*:before {
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+     outline: 0 !important;
+     outline-offset: 0;
+}
+
+/* CSS */
+
+body {
+     font-family: var(--primary-font);
+     font-size: 100%;
+     font-weight: 400;
+}
+
+h1 {
+     color: var(--primary-color);
+     font-size: 55px;
+     font-weight: 900;
+     margin-bottom: 1rem;
+     text-shadow: 1px 0 6px #000;
+}
+
+     h1 span {
+          color: var(--primary-color);
+     }
+
+h2 {
+     color: var(--secondary-color);
+     font-family: var(--secondary-font);
+     font-size: 2rem;
+     font-weight: 600;
+     line-height: 3rem;
+     text-transform: capitalize;
+}
+
+h3 {
+     color: var(--secondary-color);
+     font-family: var(--primary-font);
+     font-size: 2rem;
+     font-weight: 600;
+     line-height: 3rem;
+     text-transform: capitalize;
+}
+
+h4 {
+     color: var(--secondary-color);
+     font-family: var(--secondary-font);
+     font-size: 1rem;
+     font-weight: 800;
+     margin-bottom: 0.5rem;
+     text-transform: capitalize;
+}
+
+h5 {
+     color: var(--black-color);
+     font-family: var(--secondary-font);
+     font-size: 1rem;
+     font-weight: 700;
+     margin-bottom: 0.5rem;
+     text-transform: capitalize;
+}
+
+p {
+     color: var(--black-color);
+     font-size: 1rem;
+     font-weight: 500;
+     letter-spacing: 1px;
+     line-height: 2rem;
+}
+
+.wrapper {
+     padding-top: 4rem;
+     padding-bottom: 4rem;
+}
+
+.text-content {
+     width: 50%;
+     margin: auto;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+     width: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+     background-color: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+     background-color: var(--secondary-color);
+}
+
+/* Header */
+
+.navigation-wrap {
+     background-color: var(--primary-color);
+     left: 0;
+     position: fixed;
+     transition: all 0.5s ease-out;
+     width: 100%;
+     z-index: 1000;
+     -webkit-transition: all 0.5s ease-out;
+}
+
+     .navigation-wrap .nav-item {
+          padding: 0 0.5rem;
+          transition: all 0.5s linear;
+     }
+
+.navbar-toggler:focus {
+     border: unset;
+     box-shadow: none;
+     outline: unset;
+}
+
+.nav-link {
+     color: var(--black-color);
+     font-size: 1rem;
+     font-weight: 600;
+     text-transform: capitalize;
+     letter-spacing: 1px;
+}
+
+     .nav-link:hover,
+     .nav-link.active {
+          color: var(--secondary-color) !important;
+     }
+
+/* Navbar */
+
+.navigation-wrap.scroll-on {
+     background-color: var(--white-color);
+     box-shadow: 0 0.25rem 1.75 rem 0 rgb(0, 0, 0, 0.1);
+     left: 0;
+     position: fixed;
+     top: 0;
+     transition: all 0.2s ease-in-out 0s;
+     width: 100%;
+}
+
+     .navigation-wrap.scroll-on .nav-link {
+          color: var(--black-color);
+     }
+
+          .navigation-wrap.scroll-on .nav-link:hover,
+          .navigation-wrap.scroll-on .nav-link:active {
+               color: var(--primary-color);
+          }
+
+/* Top-banner */
+
+.top-banner {
+     background: url('../MRSTW/Images/10.jpg') no-repeat center;
+     background-size: cover;
+     padding: 16rem 0 10rem;
+     width: 100%;
+}
+
+     .top-banner p {
+          color: var(--white-color);
+     }
+
+.main-button {
+     background-color: var(--primary-color);
+     border: 0.125rem solid var(--black-color);
+     border-radius: 0.5rem;
+     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+     color: var(--black-color);
+     display: inline-block;
+     font-size: 1rem;
+     font-weight: 500;
+     line-height: 1.5rem;
+     padding: 0.75rem 1.5rem;
+     text-transform: capitalize;
+     transition: all .5s ease-out 0s;
+     -moz-transition: all .5s ease-out 0s;
+     -o-transition: all .5s ease-out 0s;
+     -webkit-transition: all .5s ease-out 0s;
+}
+
+     .main-button:hover {
+          background-color: transparent;
+          color: var(--secondary-color);
+     }
+
+
+/* evenimente */
+
+a,
+a:hover {
+     text-decoration: none;
+     color: var(--secondary-color);
+}
+
+     a:hover {
+          color: var(--primary-color) !important;
+     }
+
+.events .card {
+     border: none;
+}
+
+.events .link_category_events {
+     display: block;
+     position: relative;
+     z-index: 1;
+}
+
+     .events .link_category_events::before {
+          background: var(--secondary-color);
+          border: 3px dotted var(--secondary-color);
+          border-radius: 50%;
+          content: '';
+          height: 100%;
+          left: 50%;
+          position: absolute;
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%) scale(0);
+          transition: all .5s ease;
+          width: 100%;
+          z-index: -1;
+          -moz-transition: all .5s ease;
+          -ms-transition: all .5s ease;
+          -o-transition: all .5s ease;
+          -webkit-transition: all .5s ease;
+     }
+
+.card:hover .link_category_events::before {
+     transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+/* Tipuri de evenimente */
+
+/* FAQ */

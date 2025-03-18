@@ -1,0 +1,9 @@
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.Domain\bin\Debug\MRSTW.Domain.dll
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.Domain\bin\Debug\MRSTW.Domain.pdb
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.Domain\bin\Debug\MRSTW.Helpers.dll
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.Domain\bin\Debug\MRSTW.Helpers.pdb
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.Domain\obj\Debug\MRSTW.Domain.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.Domain\obj\Debug\MRSTW.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.Domain\obj\Debug\MRSTW.Do.6A6B7663.Up2Date
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.Domain\obj\Debug\MRSTW.Domain.dll
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.Domain\obj\Debug\MRSTW.Domain.pdb
