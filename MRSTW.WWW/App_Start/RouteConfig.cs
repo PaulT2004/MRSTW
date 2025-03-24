@@ -1,4 +1,4 @@
-﻿namespace MRSTW.WWW.App_Start
+﻿namespace MRSTW.Web.App_Start
 {
      public class RouteConfig
      {

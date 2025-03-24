@@ -1,4 +1,4 @@
-namespace MRSTW.WWW.Models
+namespace MRSTW.Web.Models
 {
      public class ErrorViewModel
      {

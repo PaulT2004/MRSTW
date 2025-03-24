@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MRSTW.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cf4dbd4b05ba2eb39885f69dfe8e400b345f03c")]
 [assembly: System.Reflection.AssemblyProductAttribute("MRSTW.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MRSTW.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

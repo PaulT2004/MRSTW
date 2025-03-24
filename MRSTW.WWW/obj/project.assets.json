@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\MRSTW\\MRSTW.WWW\\MRSTW.WWW.csproj",
-      "projectName": "MRSTW.WWW",
-      "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\MRSTW\\MRSTW.WWW\\MRSTW.WWW.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\MRSTW\\MRSTW.WWW\\MRSTW.Web.csproj",
+      "projectName": "MRSTW.Web",
+      "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\MRSTW\\MRSTW.WWW\\MRSTW.Web.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\MRSTW\\MRSTW.WWW\\obj\\",
       "projectStyle": "PackageReference",
@@ -75,7 +75,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -174,6 +174,29 @@ p {
                color: var(--primary-color);
           }
 
+.login-button {
+     background-color: var(--primary-color);
+     border: 0.125rem solid var(--black-color);
+     border-radius: 0.5rem;
+     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+     color: var(--black-color);
+     display: inline-block;
+     font-size: 1rem;
+     font-weight: 500;
+     line-height: 1.375rem;
+     padding: 0rem 1.5rem;
+     text-transform: capitalize;
+     transition: all .2s ease-out 0s;
+     -moz-transition: all .2s ease-out 0s;
+     -o-transition: all .2s ease-out 0s;
+     -webkit-transition: all .2s ease-out 0s;
+}
+
+     .login-button:hover {
+          background-color: transparent;
+          color: var(--secondary-color);
+     }
+
 /* Top-banner */
 
 .top-banner {
@@ -259,3 +282,4 @@ a:hover {
 /* Tipuri de evenimente */
 
 /* FAQ */
+

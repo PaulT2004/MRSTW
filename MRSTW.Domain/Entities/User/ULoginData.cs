@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MRSTW.Domain.Entities.User
+namespace MRSTW.Businesslogic.Core
 {
-    class ULoginData
+    public class UserApi
     {
+
     }
 }

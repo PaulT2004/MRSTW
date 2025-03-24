@@ -2,6 +2,7 @@
 {
      public class Events
      {
-          public List<string> Evenimente { get; set; }
+          public List<string> EventTypes { get; set; }
+          public List<string> Images { get; set; }
      }
 }

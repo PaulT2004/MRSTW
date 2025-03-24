@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MRSTW.BusinessLogic.Interfaces;
+using MRSTW.BusinessLogic.StructBL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +10,9 @@ namespace MRSTW.BusinessLogic
 {
     public class BusinessLogic
     {
+          public IAuth GetAuthBL() 
+          { 
+               return new AuthBL();          
+          }
     }
 }
