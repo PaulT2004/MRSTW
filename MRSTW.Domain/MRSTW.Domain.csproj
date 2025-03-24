@@ -41,8 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\User\ULoginData.cs" />
-    <Compile Include="Model\UserLoginDTO.cs" />
+    <Compile Include="Entities\User\UserLoginData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -50,6 +49,9 @@
       <Project>{d5834bf9-2887-4551-8ff7-a7056437c483}</Project>
       <Name>MRSTW.Helpers</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

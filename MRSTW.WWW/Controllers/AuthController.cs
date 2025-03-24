@@ -26,9 +26,9 @@ namespace MRSTW.Web.Controllers
 
           [HttpPost]
 
-          public ActionResult Auth(UserDataLogin login)
+          public ActionResult Auth(AuthUserDataLogin login)
           {
-               var data = new UserLoginDTO
+               var data = new UserLoginData
                {
                     Username = login.Username,
                     Password = login.Password,

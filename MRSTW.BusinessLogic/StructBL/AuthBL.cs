@@ -11,7 +11,7 @@ namespace MRSTW.BusinessLogic.StructBL
 {
      internal class AuthBL : UserApi, IAuth
      {
-          public string UserAuthLogin(UserLoginDTO data) 
+          public string UserAuthLogin(UserLoginData data) 
           {
                return UserAuthLoginAction(data);
           }

@@ -9,6 +9,6 @@ namespace MRSTW.BusinessLogic.Interfaces
 {
      interface IAuth
      {
-          string UserAuthLogin(UserLoginDTO data);
+          string UserAuthLogin(UserLoginData data);
      }
 }

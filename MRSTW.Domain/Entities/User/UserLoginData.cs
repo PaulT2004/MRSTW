@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MRSTW.Domain.Model
 {
-     public class UserLoginDTO
+     public class UserLoginData
      {
           public string Username { get; set; }
           public string Password { get; set; }

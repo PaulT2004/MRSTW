@@ -1,6 +1,6 @@
 ﻿namespace MRSTW.Web.Models.Auth
 {
-     public class UserDataLogin
+     public class AuthUserDataLogin
      {
      }
 }
