@@ -1,0 +1,9 @@
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.WWW\obj\Debug\net8.0\MRSTW.Web.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.WWW\obj\Debug\net8.0\MRSTW.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.WWW\obj\Debug\net8.0\MRSTW.Web.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.WWW\obj\Debug\net8.0\MRSTW.Web.AssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.WWW\obj\Debug\net8.0\MRSTW.Web.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.WWW\obj\Debug\net8.0\MRSTW.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.WWW\obj\Debug\net8.0\MRSTW.Web.RazorAssemblyInfo.cache
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.WWW\obj\Debug\net8.0\MRSTW.Web.RazorAssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\MRSTW\MRSTW.WWW\obj\Debug\net8.0\MRSTW.Web.sourcelink.json

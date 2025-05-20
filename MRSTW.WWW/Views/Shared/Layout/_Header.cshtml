@@ -1,7 +1,7 @@
 ﻿@model MRSTW.Web.Models.Events
 
 <header>
-     <nav class="navbar navbar-expand-lg navigation-wrap" href="@Url.Action("Index","Home")">
+     <nav class="navbar navbar-expand-lg navigation-wrap">
           <div class="container">
                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="navbar-toggler-icon"></i>
@@ -9,18 +9,28 @@
                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                          <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="#">Acasa</a>
+                              <a class="nav-link active" aria-current="page" href="#">Home</a>
+                         </li>
+                         <div class="dropdown">
+                              <a class="btn btn-secondary dropdown-toggle" href="#explore" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                   Explore
+                              </a>
+                              <ul class="dropdown-menu">
+                                   <li><a class="dropdown-item" href="#_Recents.cshtml">Recents</a></li>
+                                   <li><a class="dropdown-item" href="#_Concerts.cshtml">Concerts</a></li>
+                                   <li><a class="dropdown-item" href="#_Fairs.cshtml">Fairs</a></li>
+                                   <li><a class="dropdown-item" href="#_Sports.cshtml">Sports</a></li>
+                                   <li><a class="dropdown-item" href="#_Meetings.cshtml">Meetings</a></li>
+                                   <li><a class="dropdown-item" href="#_Voluntary.cshtml">Voluntary</a></li>
+                                   <li><a class="dropdown-item" href="#_Others">Others</a></li>
+                              </ul>
+                         </div>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#add">Add event</a>
                          </li>
                          <li class="nav-item">
-                              <a class="nav-link" href="#explore">Exploreaza evenimente</a>
+                              <a class="nav-link" href="#faq">FAQ</a>
                          </li>
-                         <li class="nav-item">
-                              <a class="nav-link" href="#add">Adauga eveniment</a>
-                         </li>
-                         <li class="nav-item">
-                              <a class="nav-link" href="#support">FAQ/Suport</a>
-                         </li>
-                         <li><button class="login-button mt-2">Logare</button></li>
                     </ul>
                </div>
           </div>

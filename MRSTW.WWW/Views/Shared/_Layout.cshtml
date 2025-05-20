@@ -26,30 +26,16 @@
           </nav>
      </header>
 
-     <!-- banner -->
-
-     <section id="home">
-          @Html.Partial("_Banner")
-     </section>
-
      <!-- meniu -->
 
-     <section class="events p-4">
-          @Html.Partial("_Menu")
+     <section class="content">
+          @RenderBody()
+
+          @Html.Partial("_Footer")
      </section>
 
-     <!-- adauga evenimente-->
-
-          @Html.Partial("_Add_Event")
-
-     <!-- FAQ -->
-
-          @Html.Partial("_FAQ_Support")
-
-     <!-- Footer -->
-
-           @Html.Partial("_Footer")
 
 
+           
 </body>
 </html>

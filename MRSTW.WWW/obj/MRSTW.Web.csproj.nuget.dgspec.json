@@ -4,6 +4,65 @@
     "C:\\Users\\Admin\\Documents\\GitHub\\MRSTW\\MRSTW.WWW\\MRSTW.Web.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Admin\\Desktop\\Uni\\Anul 2\\Sem 2\\TW\\MRSTW\\MRSTW.Helpers\\MRSTW.Helpers.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Uni\\Anul 2\\Sem 2\\TW\\MRSTW\\MRSTW.Helpers\\MRSTW.Helpers.csproj",
+        "projectName": "MRSTW.Helpers",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\Uni\\Anul 2\\Sem 2\\TW\\MRSTW\\MRSTW.Helpers\\MRSTW.Helpers.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Admin\\Documents\\GitHub\\MRSTW\\MRSTW.BusinessLogic\\MRSTW.BusinessLogic.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\MRSTW\\MRSTW.BusinessLogic\\MRSTW.BusinessLogic.csproj",
+        "projectName": "MRSTW.BusinessLogic",
+        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\MRSTW\\MRSTW.BusinessLogic\\MRSTW.BusinessLogic.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\Admin\\Desktop\\Uni\\Anul 2\\Sem 2\\TW\\MRSTW\\MRSTW.Helpers\\MRSTW.Helpers.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\Uni\\Anul 2\\Sem 2\\TW\\MRSTW\\MRSTW.Helpers\\MRSTW.Helpers.csproj"
+              },
+              "C:\\Users\\Admin\\Documents\\GitHub\\MRSTW\\MRSTW.Domain\\MRSTW.Domain.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\MRSTW\\MRSTW.Domain\\MRSTW.Domain.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Admin\\Documents\\GitHub\\MRSTW\\MRSTW.Domain\\MRSTW.Domain.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\MRSTW\\MRSTW.Domain\\MRSTW.Domain.csproj",
+        "projectName": "MRSTW.Domain",
+        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\MRSTW\\MRSTW.Domain\\MRSTW.Domain.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\Admin\\Desktop\\Uni\\Anul 2\\Sem 2\\TW\\MRSTW\\MRSTW.Helpers\\MRSTW.Helpers.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\Uni\\Anul 2\\Sem 2\\TW\\MRSTW\\MRSTW.Helpers\\MRSTW.Helpers.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\Users\\Admin\\Documents\\GitHub\\MRSTW\\MRSTW.WWW\\MRSTW.Web.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -31,7 +90,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Admin\\Documents\\GitHub\\MRSTW\\MRSTW.BusinessLogic\\MRSTW.BusinessLogic.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\MRSTW\\MRSTW.BusinessLogic\\MRSTW.BusinessLogic.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -68,7 +131,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

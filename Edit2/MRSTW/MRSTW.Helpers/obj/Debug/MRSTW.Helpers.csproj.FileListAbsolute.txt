@@ -1,0 +1,6 @@
+C:\Users\Admin\Documents\GitHub\MRSTW\Edit2\MRSTW\MRSTW.Helpers\bin\Debug\MRSTW.Helpers.dll
+C:\Users\Admin\Documents\GitHub\MRSTW\Edit2\MRSTW\MRSTW.Helpers\bin\Debug\MRSTW.Helpers.pdb
+C:\Users\Admin\Documents\GitHub\MRSTW\Edit2\MRSTW\MRSTW.Helpers\obj\Debug\MRSTW.Helpers.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\MRSTW\Edit2\MRSTW\MRSTW.Helpers\obj\Debug\MRSTW.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\MRSTW\Edit2\MRSTW\MRSTW.Helpers\obj\Debug\MRSTW.Helpers.dll
+C:\Users\Admin\Documents\GitHub\MRSTW\Edit2\MRSTW\MRSTW.Helpers\obj\Debug\MRSTW.Helpers.pdb

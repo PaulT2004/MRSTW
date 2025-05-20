@@ -1,0 +1,61 @@
+﻿@{
+     Layout = "~/Views/Shared/_Layout.cshtml";
+     ViewBag.Title = "FAQ";
+}
+
+<div class="container mt-4">
+     <h2>FAQ</h2>
+     <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+               <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                         <h6>What is this website about?</h6>
+                    </button>
+               </h2>
+               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                         <h7>The main purpose of this website is about <span class="highlight">exploring events</span> that is going to occur.</h7>
+                    </div>
+               </div>
+          </div>
+
+          <div class="accordion-item">
+               <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                         <h6>What kind of events can I explore</h6>
+                    </button>
+               </h2>
+               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion"> 
+                    <div class="accordion-body">
+                         <h7>All events are divided into 6 categories: <span class="highlight">concerts, fairs, sports, meetings, voluntary and others</span>. There is also a tab where you can explore <span class="highlight">the last events</span> to our website.</h7>
+                    </div>
+               </div>
+          </div>
+
+          <div class="accordion-item">
+               <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                         <h6>Am I able to add an event?</h6>
+                    </button>
+               </h2>
+               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                         <h7>Yes. You have to <span class="highlight">fill the details</span> to be able to publish the event.</h7>
+                    </div>
+               </div>
+          </div>
+
+          <div class="accordion-item">
+               <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                         <h6>Besides adding and exploring events, am i able to do something else?</h6>
+                    </button>
+               </h2>
+               <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                         <h7>Currently none, but we are going to improve our website.</h7>
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>

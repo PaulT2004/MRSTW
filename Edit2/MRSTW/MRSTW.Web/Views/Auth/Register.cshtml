@@ -1,0 +1,57 @@
+﻿@model MRSTW.Web.Models.Auth.AuthUserDataRegister
+
+@{
+     Layout = "~/Views/Shared/_LayoutBlank.cshtml";
+     ViewBag.Title = "Register";
+}
+
+<div class="auth-panel-wrapper">
+     <div class="auth-bg-container">
+          <div class="panel panel-filled auth-panel login-centered-panel">
+               <div class="panel-body">
+                    @Html.ValidationSummary(true)
+
+                    @using (Html.BeginForm("Register", "Auth", FormMethod.Post, new { @id = "RegisterForm" }))
+                    {
+                         @Html.AntiForgeryToken()
+
+                         <div class="form-group">
+                              @Html.LabelFor(model => model.Email, new { @class = "control-label" })
+                              @Html.TextBoxFor(model => model.Email, new
+                              {
+                                   @class = "form-control",
+                                   placeholder = "Enter email here",
+                                   title = "Enter your email",
+                                   type = "email"
+                              })
+                         </div>
+
+                         <div class="form-group">
+                              @Html.LabelFor(model => model.Username, new { @class = "control-label" })
+                              @Html.TextBoxFor(model => model.Username, new
+                              {
+                                   @class = "form-control",
+                                   placeholder = "Enter name here",
+                                   title = "Enter your name"
+                              })
+                         </div>
+
+                         <div class="form-group">
+                              @Html.LabelFor(model => model.Password, new { @class = "control-label" })
+                              @Html.PasswordFor(model => model.Password, new
+                              {
+                                   @class = "form-control",
+                                   placeholder = "Enter password here",
+                                   title = "Enter your password"
+                              })
+                         </div>
+
+                         <div>
+                         <button class="btn btn-accent">Register</button>
+                         <a class="btn btn-default" href="@Url.Action("Login", "Auth")">Back to Login</a>
+                         </div>
+                    }
+               </div>
+          </div>
+     </div>
+</div>

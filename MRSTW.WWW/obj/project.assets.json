@@ -1,11 +1,64 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "MRSTW.BusinessLogic/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "MRSTW.Domain": "1.0.0",
+          "MRSTW.Helpers": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MRSTW.BusinessLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MRSTW.BusinessLogic.dll": {}
+        }
+      },
+      "MRSTW.Domain/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "MRSTW.Helpers": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MRSTW.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MRSTW.Domain.dll": {}
+        }
+      },
+      "MRSTW.Helpers/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/MRSTW.Helpers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MRSTW.Helpers.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "MRSTW.BusinessLogic/1.0.0": {
+      "type": "project",
+      "path": "../MRSTW.BusinessLogic/MRSTW.BusinessLogic.csproj",
+      "msbuildProject": "../MRSTW.BusinessLogic/MRSTW.BusinessLogic.csproj"
+    },
+    "MRSTW.Domain/1.0.0": {
+      "type": "project",
+      "path": "../MRSTW.Domain/MRSTW.Domain.csproj",
+      "msbuildProject": "../MRSTW.Domain/MRSTW.Domain.csproj"
+    },
+    "MRSTW.Helpers/1.0.0": {
+      "type": "project",
+      "path": "../../../../Desktop/Uni/Anul 2/Sem 2/TW/MRSTW/MRSTW.Helpers/MRSTW.Helpers.csproj",
+      "msbuildProject": "../../../../Desktop/Uni/Anul 2/Sem 2/TW/MRSTW/MRSTW.Helpers/MRSTW.Helpers.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "MRSTW.BusinessLogic >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Admin\\.nuget\\packages\\": {},
@@ -38,7 +91,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Admin\\Documents\\GitHub\\MRSTW\\MRSTW.BusinessLogic\\MRSTW.BusinessLogic.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\MRSTW\\MRSTW.BusinessLogic\\MRSTW.BusinessLogic.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -75,7 +132,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

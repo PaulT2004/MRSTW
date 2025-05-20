@@ -13,7 +13,7 @@ namespace MRSTW.BusinessLogic.Core
           
           // Auth
 
-          public string UserAuthLoginAction(UserLoginDTO data) 
+          public string UserAuthLoginAction(UserLoginData data) 
           {
                return "token-key";
           }

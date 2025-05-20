@@ -1,0 +1,50 @@
+﻿@model MRSTW.Web.Models.Events
+@using MRSTW.Domain.Entities.User
+@{
+     var profile = Session["User"] as UserDBTable;
+}
+
+<header>
+     <nav class="navbar navbar-expand-lg navigation-wrap">
+          <div class="container">
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="navbar-toggler-icon"></i>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                         <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="@Url.Action("Index", "Home")">Home</a>
+                         </li>
+                         <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="exploreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                   Explore
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
+                                   <li><a class="dropdown-item" href="@Url.Action("Concerts", "Event")">Concerts</a></li>
+                                   <li><a class="dropdown-item" href="@Url.Action("Fairs", "Event")">Fairs</a></li>
+                                   <li><a class="dropdown-item" href="@Url.Action("Sports", "Event")">Sports</a></li>
+                                   <li><a class="dropdown-item" href="@Url.Action("Meetings", "Event")">Meetings</a></li>
+                                   <li><a class="dropdown-item" href="@Url.Action("Voluntary", "Event")">Voluntary</a></li>
+                                   <li><a class="dropdown-item" href="@Url.Action("Others", "Event")">Others</a></li>
+                              </ul>
+                         </li>
+                         @if (profile != null && (profile.Role == UserLevel.Organizer || profile.Role == UserLevel.Admin))
+                         {
+                              <li class="nav-item">
+                                   <a class="nav-link" href="@Url.Action("AddEvent", "Event")">Add Event</a>
+                              </li>
+                         }
+                         <li class="nav-item">
+                              <a class="nav-link" href="@Url.Action("FAQ", "Home")">FAQ</a>
+                         </li>
+                         @if (profile != null && profile.Role == UserLevel.Admin)
+                         {
+                              <li class="nav-item">
+                                   <a class="nav-link" href="@Url.Action("FAQ", "Home")">Manage Users</a>
+                              </li>
+                         }
+                    </ul>
+               </div>
+          </div>
+     </nav>
+</header>

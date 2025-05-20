@@ -40,12 +40,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dFxfQWRkX0V2ZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/MRSTW/MRSTW.WWW/Views/Shared/Layout/_Banner.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dFxfQmFubmVyLmNzaHRtbA==
+[C:/Users/Admin/Documents/GitHub/MRSTW/MRSTW.WWW/Views/Shared/Layout/_Concerts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dFxfQ29uY2VydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/MRSTW/MRSTW.WWW/Views/Shared/Layout/_FAQ_Support.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dFxfRkFRX1N1cHBvcnQuY3NodG1s
+[C:/Users/Admin/Documents/GitHub/MRSTW/MRSTW.WWW/Views/Shared/Layout/_Fairs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dFxfRmFpcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/MRSTW/MRSTW.WWW/Views/Shared/Layout/_FAQ.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dFxfRkFRLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/Documents/GitHub/MRSTW/MRSTW.WWW/Views/Shared/Layout/_Footer.cshtml]
@@ -56,8 +60,40 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dFxfSGVhZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/MRSTW/MRSTW.WWW/Views/Shared/Layout/_Menu.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dFxfTWVudS5jc2h0bWw=
+[C:/Users/Admin/Documents/GitHub/MRSTW/MRSTW.WWW/Views/Shared/Layout/_Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dFxfSG9tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/MRSTW/MRSTW.WWW/Views/Shared/Layout/_Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dFxfTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/MRSTW/MRSTW.WWW/Views/Shared/Layout/_Meetings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dFxfTWVldGluZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/MRSTW/MRSTW.WWW/Views/Shared/Layout/_Others.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dFxfT3RoZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/MRSTW/MRSTW.WWW/Views/Shared/Layout/_Recents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dFxfUmVjZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/MRSTW/MRSTW.WWW/Views/Shared/Layout/_Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dFxfUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/MRSTW/MRSTW.WWW/Views/Shared/Layout/_Sports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dFxfU3BvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/MRSTW/MRSTW.WWW/Views/Shared/Layout/_Voluntary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dFxfVm9sdW50YXJ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/MRSTW/MRSTW.WWW/Views/Shared/_Layout_Blank.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRfQmxhbmsuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/Documents/GitHub/MRSTW/MRSTW.WWW/Views/Shared/_ValidationScriptsPartial.cshtml]

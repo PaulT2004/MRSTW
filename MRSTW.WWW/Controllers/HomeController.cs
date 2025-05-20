@@ -10,11 +10,15 @@ namespace MRSTW.Web.Controllers
           public ActionResult Index()
           {
                Events add = new Events();
-               add.EventTypes {"Concerte", "Evenimente culturale", "Evenimente sportive", "Intruniri/Meeting-uri", "Actiuni de voluntariat", "Altele"};
-               add.Images {"Images/music.png", "Images/cultural.png", "Images/sports.png", "Images/meeting.png", "Images/voluntary.png", "Images/other.png"}
+               add.Username = "User"; // Correct string assignment
+               add.Events = new List<string> // Proper collection initialization
+               {
+                    "Event 1", "Event 2", "Event 3", "Event 4", "Event 5", "Event 6"
+               };
 
                return View(add);
           }
+
 
           public ActionResult EventType()
           {

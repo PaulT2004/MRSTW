@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MRSTW.BusinessLogic.Interfaces
 {
-     interface IAuth
+     public interface IAuth
      {
           string UserAuthLogin(UserLoginData data);
      }

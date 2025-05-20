@@ -11,4 +11,8 @@
     <Folder Include="Views\Auth\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MRSTW.BusinessLogic\MRSTW.BusinessLogic.csproj" />
+  </ItemGroup>
+
 </Project>

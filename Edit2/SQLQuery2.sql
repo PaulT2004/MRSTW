@@ -1,0 +1,1 @@
+﻿UPDATE UserDBTables SET Role = 0 WHERE Role IS NULL;
