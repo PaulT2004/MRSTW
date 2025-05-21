@@ -12,11 +12,14 @@ namespace MRSTW.Domain.Entities.Event
      {
           [Key]
           [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-          public int ID { get; set; }
+          public int EventID { get; set; }
+
+          [Required]
+          public EventType EventType { get; set; }
 
           [Required]
           [Display(Name = "Eventname")]
-          [StringLength(50, MinimumLength = 2, ErrorMessage = "Event name must have a name and can be max 50 characters")]
+          [StringLength(50, MinimumLength = 2, ErrorMessage = "Event name must have a name and can have max 50 characters")]
           public string Eventname { get; set; }
 
           [Required]
@@ -26,8 +29,18 @@ namespace MRSTW.Domain.Entities.Event
 
           [Required]
           [Display(Name = "Description")]
-          [StringLength(200, MinimumLength = 2, ErrorMessage = "Event must have a description and can be max 200 characters")]
+          [StringLength(200, MinimumLength = 2, ErrorMessage = "Event must have a description and can have max 200 characters")]
           public string Description { get; set; }
+
+          [Required]
+          [Display(Name = "EventTime")]
+          [StringLength(50, MinimumLength = 2, ErrorMessage = "Event must have a date and can have max 30 characters")]
+          public string EventTime { get; set; }
+
+          [Required]
+          [Display(Name = "Description")]
+          [StringLength(100, MinimumLength = 2, ErrorMessage = "Event must have a location and can have max 100 characters")]
+          public string Location { get; set; }
 
           [Required]
           [Display(Name = "PlacesTotal")]
@@ -38,15 +51,13 @@ namespace MRSTW.Domain.Entities.Event
 
           [Required]
           [Display(Name = "Price")]
-          public int Price { get; set; }
+          public float Price { get; set; }
 
           [DataType(DataType.Date)]
           public DateTime Posted { get; set; }
 
           [DataType(DataType.Date)]
           public DateTime LastUpdated { get; set; }
-
-
 
      }
 }

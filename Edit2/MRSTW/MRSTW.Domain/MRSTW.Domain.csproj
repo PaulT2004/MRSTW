@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Event\EventType.cs" />
     <Compile Include="Entities\Event\EventData.cs" />
     <Compile Include="Entities\Event\EventDBContext.cs" />
     <Compile Include="Entities\Event\EventDBTable.cs" />

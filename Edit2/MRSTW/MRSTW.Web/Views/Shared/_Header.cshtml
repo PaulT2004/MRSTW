@@ -1,5 +1,4 @@
-﻿@model MRSTW.Web.Models.Events
-@using MRSTW.Domain.Entities.User
+﻿@using MRSTW.Domain.Entities.User
 @{
      var profile = Session["User"] as UserDBTable;
 }
@@ -40,7 +39,7 @@
                          @if (profile != null && profile.Role == UserLevel.Admin)
                          {
                               <li class="nav-item">
-                                   <a class="nav-link" href="@Url.Action("FAQ", "Home")">Manage Users</a>
+                                   <a class="nav-link" href="@Url.Action("ManageUsers", "Manage")">Manage Users</a>
                               </li>
                          }
                     </ul>

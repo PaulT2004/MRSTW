@@ -356,9 +356,41 @@ a:hover {
 }
 
 
-
-
 /* Add event*/
+
+.event-form .form-group {
+     margin-bottom: 1.5rem;
+}
+
+.event-form label {
+     font-weight: 700;
+     color: var(--primary-color);
+     margin-bottom: 0.5rem;
+     display: block;
+}
+
+.event-form input,
+.event-form textarea,
+.event-form select {
+     width: 100%;
+     padding: 0.75rem;
+     border: 2px solid var(--secondary-color);
+     border-radius: 0.5rem;
+     font-family: var(--primary-font);
+     font-size: 1rem;
+     transition: border-color 0.2s ease;
+}
+
+     .event-form input:focus,
+     .event-form textarea:focus,
+     .event-form select:focus {
+          border-color: var(--primary-color);
+          outline: none;
+     }
+
+.event-form .main-button {
+     margin-top: 1rem;
+}
 
 /* FAQ */
 

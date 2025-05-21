@@ -1,4 +1,9 @@
-﻿<footer class="footer pt-12 pb-12 mt-12">
+﻿@using MRSTW.Domain.Entities.User
+@{
+     var profile = Session["User"] as UserDBTable;
+}
+
+<footer class="footer pt-12 pb-12 mt-12">
      <div class="container text-center text-md-left">
           <div class="row">
 
@@ -22,11 +27,14 @@
                     </ul>
                </div>
 
-               <div class="col-md-12 mb-12">
-                    <ul class="list-unstyled">
-                         <li><a href="@Url.Action("AddEvent", "Event")">Add Event</a></li>
-                    </ul>
-               </div>
+               @if (profile != null && (profile.Role == UserLevel.Organizer || profile.Role == UserLevel.Admin))
+               {
+                    <div class="col-md-12 mb-12">
+                         <ul class="list-unstyled">
+                              <li><a href="@Url.Action("AddEvent", "Event")">Add Event</a></li>
+                         </ul>
+                    </div>
+               }
 
                <div class="col-md-12 mb-12">
                     <ul class="list-unstyled">
@@ -34,12 +42,21 @@
                     </ul>
                </div>
 
+               @if (profile != null && profile.Role == UserLevel.Admin)
+               {
+                    <div class="col-md-12 mb-12">
+                         <ul class="list-unstyled">
+                              <li><a href="@Url.Action("ManageUsers", "Manage")">Manage Users</a></li>  
+                         </ul>
+                    </div>
+               }
 
-               <hr class="mb-12">
 
-               <div class="text-center">
-                    <h4>&copy; 2025. All Rights Reserved.</h4>
+                    <hr class="mb-12">
+
+                    <div class="text-center">
+                         <h4>&copy; 2025. All Rights Reserved.</h4>
+                    </div>
                </div>
-          </div>
 </footer>
 

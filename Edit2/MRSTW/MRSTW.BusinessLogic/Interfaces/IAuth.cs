@@ -9,6 +9,7 @@ namespace MRSTW.BusinessLogic.Interfaces
 {
      public interface IAuth
      {
-          UserLoginData Login(string username, string password);
+          UserDBTable Login(string username, string password, string ip);
+          bool Register(string username, string email, string password, string ip);
      }
 }

@@ -1,5 +1,6 @@
 ﻿using MRSTW.BusinessLogic;
 using MRSTW.Domain.Entities.User;
+using MRSTW.Helpers.Hash;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,23 +24,13 @@ namespace MRSTW.Web.Extensions
                foreach (var user in allUsers)
                {
                     string raw = $"{user.Username}:{saltCookie.Value}";
-                    string hashed = HashValue(raw);
+                    string hashed = new HashGenerator().HashPassword(raw);
 
                     if (hashed == authCookie.Value)
                          return user;
                }
 
                return null;
-          }
-
-          private static string HashValue(string input)
-          {
-               using (var sha = SHA256.Create())
-               {
-                    var bytes = Encoding.UTF8.GetBytes(input);
-                    var hash = sha.ComputeHash(bytes);
-                    return Convert.ToBase64String(hash);
-               }
           }
      }
 }

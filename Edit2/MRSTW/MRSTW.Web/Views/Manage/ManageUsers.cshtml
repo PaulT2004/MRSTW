@@ -1,0 +1,55 @@
+﻿@model List<MRSTW.Domain.Entities.User.UserDBTable>
+@using MRSTW.Domain.Entities.User
+
+@{
+     Layout = "~/Views/Shared/_Layout.cshtml";
+     ViewBag.Title = "ManageUsers";
+     var roles = Enum.GetValues(typeof(UserLevel)).Cast<UserLevel>();
+}
+
+<section>
+     <div class="container-fluid others">
+
+     </div>
+</section>
+
+@using (Html.BeginForm("UpdateRoles", "Manage", FormMethod.Post))
+{
+     <table class="table table-bordered">
+          <thead>
+               <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Last Login</th>
+                    <th>Last IP</th>
+               </tr>
+          </thead>
+          <tbody>
+               @for (int i = 0; i < Model.Count; i++)
+               {
+                    <tr>
+                         <td>
+                              @Html.Hidden($"users[{i}].Id", Model[i].ID)
+                              @Model[i].Username
+                         </td>
+                         <td>@Model[i].Email</td>
+                         <td>
+                              <select name="users[@i].Role" class="form-control">
+                                   @foreach (var role in roles)
+                                   {
+                                        <option value="@role" @(Model[i].Role == role ? "selected" : "")>@role</option>
+                                   }
+                              </select>
+                         </td>
+                         <td>@Model[i].LastLogin.ToString("g")</td>
+                         <td>@Model[i].LastIp</td>
+                    </tr>
+               }
+          </tbody>
+     </table>
+
+     <button type="submit" class="btn btn-primary">Update All</button>
+}
+
+

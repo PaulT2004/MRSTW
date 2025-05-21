@@ -1,37 +1,15 @@
-﻿using System.Data.Entity;
+﻿using MRSTW.Helpers.Hash;
+using System.Data.Entity;
 using MRSTW.Domain.Entities.User;
 using MRSTW.Domain;
 using System.Linq;
 using System.Collections.Generic;
+using System;
 
 namespace MRSTW.BusinessLogic
 {
      public class UserApi
      {
-          public bool RegisterUser(string email, string username, string password)
-          {
-               using (var db = new UserDBContext())
-               {
-                    var existingUser = db.Users.FirstOrDefault(u => u.Username == username || u.Email == email);
-                    if (existingUser != null)
-                         return false;
-
-                    // REGISTER
-                    var user = new UserDBTable
-                    {
-                         Email = email,
-                         Username = username,
-                         Password = password,
-                         LastLogin = System.DateTime.Now,
-                         LastIp = "127.0.0.1",
-                         Role = UserLevel.User
-                    };
-
-                    db.Users.Add(user);
-                    db.SaveChanges();
-                    return true;
-               }
-          }
 
           public bool UserExists(string username, string email)
           {
@@ -64,6 +42,24 @@ namespace MRSTW.BusinessLogic
                {
                     return db.Users.ToList();
                }
+          }
+
+          public UserDBTable ValidateUserLogin(string username, string password, string ip)
+          {
+               var hashGenerator = new HashGenerator();
+               string hashedPassword = hashGenerator.HashPassword(password);
+               var user = GetUserByCredentials(username, hashedPassword);
+               if (user != null)
+               {
+                    user.LastLogin = DateTime.Now;
+                    user.LastIp = ip;
+                    using (var db = new UserDBContext())
+                    {
+                         db.Entry(user).State = EntityState.Modified;
+                         db.SaveChanges();
+                    }
+               }
+               return user;
           }
 
      }

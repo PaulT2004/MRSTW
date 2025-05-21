@@ -157,6 +157,7 @@
     <Content Include="Views\Auth\Register.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Manage\ManageUsers.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -167,7 +168,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Base\" />
-    <Folder Include="Views\Manage\" />
     <Folder Include="Views\Shared\LayoutBlank\" />
     <Folder Include="Views\Shared\Layout\" />
   </ItemGroup>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MRSTW.Helpers.Hash;
+using System;
 using System.Security.Cryptography;
 using System.Text;
 using System.Web;
@@ -11,18 +12,18 @@ namespace MRSTW.Helpers.Cookie
           {
                string salt = GenerateSalt(16);
                string value = $"{username}:{salt}";
-               string hashedValue = HashValue(value);
+               string hashedValue = new HashGenerator().HashPassword(value);
 
                var cookie = new HttpCookie("AuthCookie", hashedValue)
                {
                     HttpOnly = true,
-                    Expires = DateTime.Now.AddHours(1)
+                    Expires = DateTime.Now.AddMinutes(60)
                };
 
                var saltCookie = new HttpCookie("AuthSalt", salt)
                {
                     HttpOnly = true,
-                    Expires = DateTime.Now.AddHours(1)
+                    Expires = DateTime.Now.AddMinutes(60)
                };
 
                HttpContext.Current.Response.Cookies.Add(cookie);
@@ -31,7 +32,7 @@ namespace MRSTW.Helpers.Cookie
                return cookie;
           }
 
-          private static string GenerateSalt(int length)
+          public static string GenerateSalt(int length)
           {
                using (var random = new RNGCryptoServiceProvider())
                {
@@ -41,14 +42,5 @@ namespace MRSTW.Helpers.Cookie
                }
           }
 
-          private static string HashValue(string input)
-          {
-               using (var sha256 = SHA256.Create())
-               {
-                    byte[] inputBytes = Encoding.UTF8.GetBytes(input);
-                    byte[] hashBytes = sha256.ComputeHash(inputBytes);
-                    return Convert.ToBase64String(hashBytes);
-               }
-          }
      }
 }

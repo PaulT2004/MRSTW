@@ -1,4 +1,91 @@
-﻿@{
+﻿@model MRSTW.Domain.Entities.Event.EventData
+@{
      Layout = "~/Views/Shared/_Layout.cshtml";
      ViewBag.Title = "AddEvent";
 }
+
+<section>
+     <div class="container-fluid others">
+
+     </div>
+</section>
+
+<div class="wrapper">
+     <div class="text-content">
+          <h2>Add a New Event</h2>
+          @using (Html.BeginForm("AddEvent", "Event", FormMethod.Post, new { @class = "event-form" }))
+          {
+               <div class="form-group mb-3">
+                    <label for="EventType">Category</label>
+                    @Html.DropDownListFor(model => model.EventType,
+                        new SelectList(Enum.GetValues(typeof(MRSTW.Domain.Entities.Event.EventType))),
+                        "Select a category",
+                        new { @class = "form-control" })
+               </div>
+
+               <div class="form-group mb-3">
+                    <label for="Eventname">Name</label>
+                    @Html.TextBoxFor(model => model.Eventname, new
+                    { 
+                         @class = "form-control", 
+                         placeholder = "Enter Event name"
+                    })
+               </div>
+
+               <div class="form-group mb-3">
+                    <label for="Description">Description</label>
+                    @Html.TextAreaFor(model => model.Description, new
+                    {
+                         @class = "form-control", 
+                         rows = 4,
+                         placeholder = "Enter description" 
+                    })
+               </div>
+
+               <div class="form-group mb-3">
+                    <label for="EventTime">Date</label>
+                    @Html.TextBoxFor(model => model.EventTime, new
+                    {
+                         @class = "form-control",
+                         placeholder = "Enter date"
+                    })
+               </div>
+
+               <div class="form-group mb-3">
+                    <label for="Location">Location</label>
+                    @Html.TextBoxFor(model => model.Location, new 
+                    { 
+                         @class = "form-control", 
+                         placeholder = "Enter location" 
+                    })
+               </div>
+
+               <div class="form-group mb-3">
+                    <label for="PlacesTotal">Places</label>
+                    @Html.TextBoxFor(model => model.PlacesTotal, new 
+                    { 
+                         @class = "form-control", 
+                         type = "number", 
+                         min = "1", 
+                         placeholder = "Enter total spots" 
+                    })
+               </div>
+
+               <div class="form-group mb-4">
+                    <label for="Price">Price</label>
+                    @Html.TextBoxFor(model => model.Price, new 
+                    { 
+                         @class = "form-control", 
+                         type = "number", 
+                         step = "0.01", 
+                         min = "0", 
+                         placeholder = "Enter price"
+                    })
+               </div>
+
+               <div class="text-center">
+                    <button type="submit" class="main-button" href="@Url.Action("Index", "Home")">Add Event</button>
+               </div>
+          }
+     </div>
+</div>
